@@ -13,6 +13,15 @@ class Students:
     def putdata(self):
         print('The name is:' + self.name, 'This is the contact:' + self.contact)
 
-John = Students("blank",0)
-John.getdata()
-John.putdata()
+class ScienceStudent(Students):
+
+    def init (self,age):
+        self.age = age
+
+    def science(selfs):
+        print ("I am a science student")
+
+Rob = ScienceStudent()
+Rob.science()
+Rob.getdata()
+Rob.putdata()
