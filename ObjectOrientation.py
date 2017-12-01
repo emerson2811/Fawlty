@@ -25,3 +25,4 @@ Rob = ScienceStudent()
 Rob.science()
 Rob.getdata()
 Rob.putdata()
+#Functions inside of a class are called "methods"
