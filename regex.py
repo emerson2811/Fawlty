@@ -17,3 +17,9 @@ else:
 
 print(re.findall(pattern, "baconeggseggsbacon"))
 #finds the patter anywhere and prints the pattern
+
+string = "My name is John, Hi I'm John"
+print(string)
+pattern = r"John"
+newstring = re.sub(pattern, "Rob", string)
+print(newstring)
