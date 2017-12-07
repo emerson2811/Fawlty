@@ -10,3 +10,7 @@ pattern = r"eggs(bacon)*"
 
 if re.match(pattern, "bacon"):
     print("Match found")
+
+pattern = r"bread(eggs)*bread"
+if re.match(pattern."breadeggsbread")
+    print("match found")
