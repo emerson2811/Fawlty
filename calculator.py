@@ -4,6 +4,13 @@ import parser
 root = TK()
 root.title('Calculator')
 
+#get the user input and place it in the textfield
+i = 0
+def get_variables(num):
+    global 1
+    display.insert(i, num)
+    i+=1
+
 #adding the input field
 display = Entry(root)
 display.grid(row=1, columnspan=6, sticky=W+E)
@@ -39,5 +46,10 @@ Button(root,text="%").grid(row=3, colmn=4)
 Button(root,text="(").grid(row=4, column=4)
 Button(root,text="exp").grid(row=5,column=4)
 
+#adding new operations
+Button(root,text="<-").grid(row=2, column=5)
+Button(root,text="x!").grid(row=3, colmn=5)
+Button(root,text=")").grid(row=4, column=5)
+Button(root,text="?").grid(row=5,column=5)
 
 root.mainloop()
