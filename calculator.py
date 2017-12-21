@@ -16,17 +16,17 @@ display = Entry(root)
 display.grid(row=1, columnspan=6, sticky=W+E)
 
 #adding buttons to the calculator
-Button(root,text="1").grid(row=2, column=0)
-Button(root,text="2").grid(row=2, column=0)
-Button(root,text="3").grid(row=2, column=0)
+Button(root,text="1", command = lambda :get_variables(1)).grid(row=2, column=0)
+Button(root,text="2", command = lambda :get_variables(2)).grid(row=2, column=0)
+Button(root,text="3", command = lambda :get_variables(3)).grid(row=2, column=0)
 
-Button(root,text="4").grid(row=2, column=0)
-Button(root,text="5").grid(row=2, column=0)
-Button(root,text="6").grid(row=2, column=0)
+Button(root,text="4", command = lambda :get_variables(4)).grid(row=2, column=0)
+Button(root,text="5", command = lambda :get_variables(5)).grid(row=2, column=0)
+Button(root,text="6", command = lambda :get_variables(6)).grid(row=2, column=0)
 
-Button(root,text="7").grid(row=2, column=0)
-Button(root,text="8").grid(row=2, column=0)
-Button(root,text="9").grid(row=2, column=0)
+Button(root,text="7", command = lambda :get_variables(7)).grid(row=2, column=0)
+Button(root,text="8", command = lambda :get_variables(8)).grid(row=2, column=0)
+Button(root,text="9", command = lambda :get_variables(9)).grid(row=2, column=0)
 
 #adding other buttons to the calculator
 Button(root,text="AC").grid(row=5, column=0)
